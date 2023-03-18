@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MRanking</title>
+    <title>M-Ranking</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
@@ -13,7 +13,21 @@
 </head>
 
   <body>
-  
+     <header class="header">
+      <div class="header__bar">
+        <h1 class="grid-6"><a href="/">M-RANKING</a></h1>
+      </div>
+
+      <div class="user_nav grid-6">
+        <a class="post" href="/rankings/new">ランキングに挑戦する</a>
+      </div>
+      
+    </header>
     <%= yield %>
+    <footer>
+      <p class="foot">
+        Copyright M-RANKING 2023.
+      </p>
+    </footer>
   </body>
 </html>
